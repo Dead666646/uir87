@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ликёро-Водочный Альянс | Промышленное оборудование</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="header header--transparent">
+        <div class="container header__container">
+            <a href="#" class="logo-container">
+                <svg class="gear-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M94.5 55.5V44.5L82.5 42.5C81.5 38.5 79.5 35.5 77.5 32.5L83.5 21.5L75.5 13.5L64.5 19.5C61.5 17.5 58.5 15.5 54.5 14.5L52.5 2.5H41.5L39.5 14.5C35.5 15.5 32.5 17.5 29.5 19.5L18.5 13.5L10.5 21.5L16.5 32.5C14.5 35.5 12.5 38.5 11.5 42.5L2.5 44.5V55.5L11.5 57.5C12.5 61.5 14.5 64.5 16.5 67.5L10.5 78.5L18.5 86.5L29.5 80.5C32.5 82.5 35.5 84.5 39.5 85.5L41.5 97.5H52.5L54.5 85.5C58.5 84.5 61.5 82.5 64.5 80.5L75.5 86.5L83.5 78.5L77.5 67.5C79.5 64.5 81.5 61.5 82.5 57.5L94.5 55.5ZM50 65C41.5 65 35 58.5 35 50C35 41.5 41.5 35 50 35C58.5 35 65 41.5 65 50C65 58.5 58.5 65 50 65Z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">Ликёро-Водочный Альянс</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#services">Инжиниринг</a></li>
+                    <li><a href="#order-form" class="nav__link--highlight">Запросить КП</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu"><span></span><span></span></div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION С ВИДЕО -->
+    <section class="hero-video">
+        <!-- Замените src на путь к вашему локальному видео, если нужно -->
+        <video autoplay muted loop playsinline class="video-bg" poster="https://images.unsplash.com/photo-1565514020176-db79364b9f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-bottles-on-a-conveyor-belt-in-a-factory-4278-large.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container hero__content">
+            <h1 class="hero__title animate-on-scroll from-bottom">Технологическое оснащение<br>ликёро-водочных производств</h1>
+            <p class="hero__subtitle animate-on-scroll from-bottom delay-100">Поставка линий розлива, резервуаров и систем учёта ЕГАИС «под ключ». Соответствие ТР ТС и требованиям взрывозащиты.</p>
+            <div class="hero__buttons animate-on-scroll from-bottom delay-200">
+                <a href="#catalog" class="btn btn--white">Каталог оборудования</a>
+                <a href="#order-form" class="btn btn--outline-white">Запросить КП</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="marquee-section">
+        <div class="marquee-content">
+            <span>ЛИНИИ РОЗЛИВА • РЕКТИФИКАЦИОННЫЕ КОЛОННЫ • РЕЗЕРВУАРЫ НЕРЖАВЕЮЩИЕ • СИСТЕМЫ CIP-МОЙКИ • АВТОМАТЫ УКУПОРКИ • МОДУЛИ ЕГАИС • НАСОСНОЕ ОБОРУДОВАНИЕ • ЭТИКЕТИРОВЩИКИ • ДОЗАТОРЫ СИРОПОВ • СПИРТОВАТЕЛИ • УСТАНОВКИ ВОДОПОДГОТОВКИ • КОНВЕЙЕРНЫЕ СИСТЕМЫ • ТЕРМОУСАДОЧНЫЕ ТУННЕЛИ • </span>
+        </div>
+    </div>
+
+    <!-- О КОМПАНИИ -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid-2-col align-center">
+                <div class="text-block animate-on-scroll from-left">
+                    <span class="section__label">Ликёро-Водочный Альянс</span>
+                    <h2>Инжиниринг для алкогольной отрасли</h2>
+                    <p>Мы понимаем специфику 171-ФЗ и требования к лицензированию. Наше оборудование проходит строгий контроль на соответствие пищевым стандартам (AISI 304/316) и готово к интеграции с государственными системами учёта.</p>
+                    <p>Работаем с заводами любой мощности: от крафтовых дистиллерий до крупных промышленных холдингов.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-num">ISO 9001</span>
+                            <span class="stat-desc">Сертификация</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">120+</span>
+                            <span class="stat-desc">Реализованных проектов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">24/7</span>
+                            <span class="stat-desc">Сервисная поддержка</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-block animate-on-scroll from-right">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Инженерный отдел">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ С ФИЛЬТРАМИ -->
+    <section id="catalog" class="section">
+        <div class="container">
+            <div class="section__header center animate-on-scroll from-bottom">
+                <span class="section__label">Спецификация</span>
+                <h2>Каталог оборудования ЛВП</h2>
+                <p style="color: #666; max-width: 600px; margin: 0 auto;">Полный спектр технологических решений: от подготовки сырья до маркировки готовой продукции. Все оборудование сертифицировано ТР ТС.</p>
+            </div>
+
+            <!-- Блок фильтров -->
+            <div class="filters-bar animate-on-scroll from-bottom">
+                <div class="filter-group">
+                    <label>Категория оборудования:</label>
+                    <select id="filter-type">
+                        <option value="all">Все категории</option>
+                        <option value="filling">Линии розлива и укупорки</option>
+                        <option value="tanks">Емкостное оборудование</option>
+                        <option value="water">Водоподготовка и спиртование</option>
+                        <option value="aux">Вспомогательное и ЕГАИС</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Производительность:</label>
+                    <select id="filter-capacity">
+                        <option value="all">Любая</option>
+                        <option value="low">До 3000 бут/час</option>
+                        <option value="mid">3000 - 6000 бут/час</option>
+                        <option value="high">Более 6000 бут/час</option>
+                    </select>
+                </div>
+                <button class="btn btn--small filter-btn" onclick="applyFilters()">Применить фильтр</button>
+            </div>
+
+            <div class="catalog-grid">
+                
+                <!-- Товар 1 -->
+                <article class="product-card animate-on-scroll from-bottom delay-0" data-category="filling" data-capacity="high" data-title="Моноблок MB-6000 Glass" data-desc="Трехблочный автомат для стекла. Ополаскивание, изобарический налив, навинчивание крышки. Идеально подходит для линий розлива водки и крепленых вин." data-specs='["Производительность: до 6000 бут/час", "Потери продукта: < 1%", "Управление: Siemens S7-1200", "Материал контакта: AISI 316L", "Соответствие: ТР ТС 021/2011"]' data-certificates='["Сертификат соответствия ТР ТС", "Декларация о взрывозащите Ex d IIB T4"]' data-image="https://images.unsplash.com/photo-1595856417768-3437836428f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="images/S265f1a59b6a7455d98d614b0d10d9061U.avif" alt="Моноблок MB-6000">
+                        <span class="product-tag">Хит продаж</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Моноблок MB-6000 Glass</h3>
+                        <p class="product-desc">Трехблочный автомат для стекла. Ополаскивание, изобарический налив, навинчивание крышки.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Моноблок MB-6000')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 2 -->
+                <article class="product-card animate-on-scroll from-bottom delay-100" data-category="filling" data-capacity="mid" data-title="Этикетировщик ET-3000 Self" data-desc="Машина для нанесения самоклеящейся этикетки на круглые и плоские бутылки." data-specs='["Производительность: до 3000 бут/час", "Точность нанесения: ±1 мм", "Быстрая смена формата"]' data-certificates='["Сертификат ТР ТС", "Гарантия 24 месяца"]' data-image="https://images.unsplash.com/photo-1625126596956-026053856287?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="images/Эти.avif" alt="Этикетировщик">
+                    </div>
+                    <div class="product-info">
+                        <h3>Этикетировщик ET-3000 Self</h3>
+                        <p class="product-desc">Машина для нанесения самоклеящейся этикетки на круглые и плоские бутылки.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Этикетировщик ET-3000')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 3 -->
+                <article class="product-card animate-on-scroll from-bottom delay-200" data-category="filling" data-capacity="low" data-title="Автомат укупорки Cap-Low" data-desc="Настольный или линейный автомат для навинчивания алюминиевых и пластиковых крышек." data-specs='["Производительность: до 1200 бут/час", "Контроль момента затяжки", "Для крафтовых производств"]' data-certificates='["Сертификат соответствия", "Инструкция по монтажу"]' data-image="https://images.unsplash.com/photo-1516919549054-e08258825f80?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="images/17800407755b6b (1).png" alt="Укупорка">
+                    </div>
+                    <div class="product-info">
+                        <h3>Автомат укупорки Cap-Low</h3>
+                        <p class="product-desc">Настольный или линейный автомат для навинчивания алюминиевых и пластиковых крышек.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Автомат укупорки Cap-Low')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 4 -->
+                <article class="product-card animate-on-scroll from-bottom delay-300" data-category="filling" data-capacity="high" data-title="Термоусадочный туннель SH-60" data-desc="Оборудование для нанесения термоусадочной капсулы (кольера) на горло бутылки." data-specs='["Производительность: 6000 бут/час", "Паровой или электрический нагрев", "Равномерная усадка"]' data-certificates='["Сертификат ТР ТС", "Паспорт оборудования"]' data-image="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="images/термо.avif" alt="Шринк-туннель">
+                    </div>
+                    <div class="product-info">
+                        <h3>Термоусадочный туннель SH-60</h3>
+                        <p class="product-desc">Оборудование для нанесения термоусадочной капсулы на горло бутылки.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Термоусадочный туннель SH-60')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 5 -->
+                <article class="product-card animate-on-scroll from-bottom delay-0" data-category="tanks" data-capacity="all" data-title="ЦКТ Универсал 5000л" data-desc="Цилиндро-конический танк для брожения и хранения. Изоляция ППУ, рубашка охлаждения." data-specs='["Объем: 5000 л", "Сталь: AISI 304 / Толщина 2мм", "Полировка швов Ra 0.8"]' data-certificates='["Декларация соответствия", "Санитарный паспорт"]' data-image="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ЦКТ">
+                    </div>
+                    <div class="product-info">
+                        <h3>ЦКТ Универсал 5000л</h3>
+                        <p class="product-desc">Цилиндро-конический танк для брожения и хранения. Изоляция ППУ, рубашка охлаждения.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('ЦКТ Универсал 5000л')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 6 -->
+                <article class="product-card animate-on-scroll from-bottom delay-100" data-category="tanks" data-capacity="all" data-title="Купажатор К-2000" data-desc="Емкость с мешалкой для приготовления купажированных напитков и ликеров." data-specs='["Объем 2000 л", "Якорная мешалка с частотником", "Датчик уровня и температуры"]' data-certificates='["Сертификат ТР ТС", "Гарантия 12 месяцев"]' data-image="https://images.unsplash.com/photo-1563293883-9b9b48583927?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563293883-9b9b48583927?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Смеситель">
+                    </div>
+                    <div class="product-info">
+                        <h3>Купажатор К-2000</h3>
+                        <p class="product-desc">Емкость с мешалкой для приготовления купажированных напитков и ликеров.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Купажатор К-2000')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 7 -->
+                <article class="product-card animate-on-scroll from-bottom delay-200" data-category="water" data-capacity="all" data-title="Установка обратного осмоса RO-5" data-desc="Система глубокой очистки воды для приготовления водок и настоек. Производительность 5 м³/ч." data-specs='["Двухступенчатая очистка", "Кондуктометр на выходе", "Автоматическая промывка мембран"]' data-certificates='["Сертификат соответствия", "Протокол испытаний"]' data-image="https://images.unsplash.com/photo-1574482620266-b6d7c52b6f8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="images/S564432235bc1438e83c980df59724087P.avif" alt="Осмос">
+                        <span class="product-tag">Важно</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Установка обратного осмоса RO-5</h3>
+                        <p class="product-desc">Система глубокой очистки воды для приготовления водок и настоек.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Установка обратного осмоса RO-5')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 8 -->
+                <article class="product-card animate-on-scroll from-bottom delay-300" data-category="water" data-capacity="all" data-title="Спиртователь непрерывного действия" data-desc="Узел inline-смешения спирта и воды с контролем крепости в реальном времени." data-specs='["Точность ±0.1% об.", "Расходомеры массы (Coriolis)", "Интеграция с ЕГАИС"]' data-certificates='["Свидетельство об утверждении типа СИ", "Сертификат ТР ТС"]' data-image="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Спиртователь">
+                    </div>
+                    <div class="product-info">
+                        <h3>Спиртователь непрерывного действия</h3>
+                        <p class="product-desc">Узел inline-смешения спирта и воды с контролем крепости в реальном времени.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Спиртователь непрерывного действия')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 9 -->
+                <article class="product-card animate-on-scroll from-bottom delay-0" data-category="aux" data-capacity="all" data-title="Станция CIP-мойки Mobile" data-desc="Мобильный модуль для безразборной мойки емкостей и трубопроводов. 2 бака (Щелочь, Кислота)." data-specs='["Насосы Grundfos", "Теплообменник пластинчатый", "PLC управление"]' data-certificates='["Сертификат ТР ТС", "Инструкция по эксплуатации"]' data-image="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CIP">
+                    </div>
+                    <div class="product-info">
+                        <h3>Станция CIP-мойки Mobile</h3>
+                        <p class="product-desc">Мобильный модуль для безразборной мойки емкостей и трубопроводов.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Станция CIP-мойки Mobile')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 10 -->
+                <article class="product-card animate-on-scroll from-bottom delay-100" data-category="aux" data-capacity="all" data-title="Насос центробежный Sanitary" data-desc="Пищевой насос для перекачки спирта, сусла и готовой продукции. Взрывозащищенное исполнение." data-specs='["Ex-proof мотор", "Открытое рабочее колесо", "Уплотнение торцевое"]' data-certificates='["Сертификат взрывозащиты", "Паспорт изделия"]' data-image="https://images.unsplash.com/photo-1563293883-9b9b48583927?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1563293883-9b9b48583927?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Насосы">
+                    </div>
+                    <div class="product-info">
+                        <h3>Насос центробежный Sanitary</h3>
+                        <p class="product-desc">Пищевой насос для перекачки спирта и готовой продукции. Взрывозащищенное исполнение.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Насос центробежный Sanitary')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 11 -->
+                <article class="product-card animate-on-scroll from-bottom delay-200" data-category="aux" data-capacity="all" data-title="АРМ ЕГАИС Под ключ" data-desc="Комплектация рабочего места технолога: ПК, сканер ФСМ, весы, рутокен, ПО." data-specs='["Настройка УТМ", "Обучение персонала", "Техподдержка 24/7"]' data-certificates='["Лицензия на ПО", "Договор на обслуживание"]' data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ЕГАИС">
+                        <span class="product-tag">Лицензия</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>АРМ ЕГАИС "Под ключ"</h3>
+                        <p class="product-desc">Комплектация рабочего места технолога: ПК, сканер ФСМ, весы, рутокен, ПО.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('АРМ ЕГАИС Под ключ')">Запросить КП</button>
+                    </div>
+                </article>
+
+                <!-- Товар 12 -->
+                <article class="product-card animate-on-scroll from-bottom delay-300" data-category="aux" data-capacity="all" data-title="Конвейерная линия Flex" data-desc="Пластинчатый конвейер для транспортировки бутылок между блоками линии розлива." data-specs='["Ширина ленты 82/114 мм", "Регулируемые борта", "Ножки с демпферами"]' data-certificates='["Сертификат ТР ТС", "Руководство по монтажу"]' data-image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Конвейер">
+                    </div>
+                    <div class="product-info">
+                        <h3>Конвейерная линия Flex</h3>
+                        <p class="product-desc">Пластинчатый конвейер для транспортировки бутылок между блоками линии розлива.</p>
+                        <button class="btn btn--small full-width open-modal-btn">Подробнее</button>
+                        <button class="btn btn--small full-width mt-10" onclick="scrollToOrder('Конвейерная линия Flex')">Запросить КП</button>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="center mt-40 animate-on-scroll from-bottom">
+                <a href="#" class="btn btn--primary">Скачать полный каталог (PDF, 15 Мб)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ИНЖИНИРИНГ -->
+    <section id="services" class="section section--gray">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Услуги</span>
+                <h2>Полный цикл внедрения</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box animate-on-scroll from-left delay-0">
+                    <i class="fa-solid fa-pen-ruler feature-icon"></i>
+                    <h3>Проектирование</h3>
+                    <p>Разработка схем обвязки (P&ID) и 3D-моделей размещения оборудования в цеху.</p>
+                </div>
+                <div class="feature-box animate-on-scroll from-bottom delay-100">
+                    <i class="fa-solid fa-screwdriver-wrench feature-icon"></i>
+                    <h3>Шеф-монтаж</h3>
+                    <p>Выезд инженеров на объект для контроля сборки и подключения коммуникаций.</p>
+                </div>
+                <div class="feature-box animate-on-scroll from-right delay-200">
+                    <i class="fa-solid fa-file-signature feature-icon"></i>
+                    <h3>Документация</h3>
+                    <p>Подготовка полного пакета документов для декларирования соответствия.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ЗАПРОСА КП (B2B Dark UI) -->
+    <section id="order-form" class="section order-section-dark">
+        <div class="container">
+            <div class="order-wrapper-dark animate-on-scroll from-bottom">
+                <div class="order-header-dark">
+                    <h2>Оставить заявку</h2>
+                    <p>Заполните форму и мы свяжемся с вами в течение 2 часов</p>
+                </div>
+                
+                <form class="order-form-dark" onsubmit="submitForm(event)">
+                    <div class="form-grid-dark">
+                        <div class="form-group-dark">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="company">Компания *</label>
+                            <input type="text" id="company" name="company" placeholder="Название компании" required>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@company.ru">
+                        </div>
+                    </div>
+
+                    <div class="form-full-width-dark">
+                        <div class="form-group-dark">
+                            <label for="equipment">Интересующая продукция</label>
+                            <select id="equipment" name="equipment">
+                                <option value="">Выберите категорию</option>
+                                <option value="filling">Линия розлива</option>
+                                <option value="tanks">Резервуары</option>
+                                <option value="egais">ЕГАИС</option>
+                                <option value="water">Водоподготовка</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group-dark">
+                            <label for="details">Комментарий</label>
+                            <textarea id="details" name="details" rows="4" placeholder="Расскажите о вашем бизнесе и потребностях..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-footer-dark">
+                        <button type="submit" class="btn btn--accent btn--large">Отправить заявку</button>
+                        <p class="form-disclaimer-dark">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности. Мы не передаём ваши данные третьим лицам.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <div class="logo-container logo--white">
+                         <svg class="gear-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M94.5 55.5V44.5L82.5 42.5C81.5 38.5 79.5 35.5 77.5 32.5L83.5 21.5L75.5 13.5L64.5 19.5C61.5 17.5 58.5 15.5 54.5 14.5L52.5 2.5H41.5L39.5 14.5C35.5 15.5 32.5 17.5 29.5 19.5L18.5 13.5L10.5 21.5L16.5 32.5C14.5 35.5 12.5 38.5 11.5 42.5L2.5 44.5V55.5L11.5 57.5C12.5 61.5 14.5 64.5 16.5 67.5L10.5 78.5L18.5 86.5L29.5 80.5C32.5 82.5 35.5 84.5 39.5 85.5L41.5 97.5H52.5L54.5 85.5C58.5 84.5 61.5 82.5 64.5 80.5L75.5 86.5L83.5 78.5L77.5 67.5C79.5 64.5 81.5 61.5 82.5 57.5L94.5 55.5ZM50 65C41.5 65 35 58.5 35 50C35 41.5 41.5 35 50 35C58.5 35 65 41.5 65 50C65 58.5 58.5 65 50 65Z" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">Ликёро-Водочный Альянс</span>
+                    </div>
+                    <p class="footer__address">Россия, г. Москва, Индустриальный проезд, д. 42</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Отдел проектов</h4>
+                    <a href="mailto:sales@lv-alliance.ru">sales@lv-alliance.ru</a>
+                    <a href="tel:+74950000000">+7 (495) 000-00-00</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Информация</h4>
+                    <a href="#">Сертификаты ТР ТС</a>
+                    <a href="#">Лицензии</a>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Ликёро-Водочный Альянс. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="productModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modalImg" src="" alt="">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDesc"></p>
+                    
+                    <div class="modal-section">
+                        <h4>Технические характеристики:</h4>
+                        <ul id="modalSpecs"></ul>
+                    </div>
+
+                    <div class="modal-section">
+                        <h4>Сертификация и безопасность:</h4>
+                        <ul id="modalCerts"></ul>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn btn--primary" onclick="closeModalAndScroll()">Запросить КП на это оборудование</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
